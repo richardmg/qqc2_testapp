@@ -8,17 +8,12 @@ Window {
     visible: true
     visibility: Window.AutomaticVisibility
 
-    Rectangle {
-        width: 200
-        height: 200
-        color: "red"
-        anchors.centerIn: parent
-        TextField {
-            anchors.centerIn: parent
-            text: "This is a text input"
-            selectByMouse: true
-            readOnly: true
-            //echoMode: TextInput.Password
+    Column {
+        Button {
+            text: "Click me"
+        }
+        Button {
+            text: "Click me, please"
         }
     }
 
